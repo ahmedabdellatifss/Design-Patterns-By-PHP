@@ -1,0 +1,25 @@
+{
+    "name": "ahmed/design-pattern-in-php",
+    "description": "code example for design patterns in php",
+    "authors": [
+        {
+            "name": "ahmedabdellatifss",
+            "email": "ahmedabdellatifss@yahoo.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "7.3"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Creational\\": "Creational"
+        }
+    },
+
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
