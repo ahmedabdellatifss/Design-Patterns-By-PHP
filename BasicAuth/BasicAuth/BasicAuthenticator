@@ -1,0 +1,12 @@
+<?php
+    namespace BasicAuth;
+
+    class BasicAuthenticator
+    {
+    
+        public function basicLogin(string $userName , string $passowrd)
+        {
+            return $userName . '-' . $passowrd;
+        }
+
+    }

@@ -1,0 +1,17 @@
+{
+    "name": "ahmed/basic-auth",
+    "description": "test for adapter",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Ahmed\\BasicAuth\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ahmedabdellatifss",
+            "email": "ahmedabdellatifss@yahoo.com"
+        }
+    ],
+    "require": {}
+}

@@ -1,0 +1,17 @@
+{
+    "name": "ahmed/token-auth-lib",
+    "description": "test lib for adapter",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Ahmed\\TokenAuthLib\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ahmedabdellatifss",
+            "email": "ahmedabdellatifss@yahoo.com"
+        }
+    ],
+    "require": {}
+}

@@ -8,7 +8,10 @@
         }
     ],
     "require": {
-        "phpunit/phpunit": "7.3"
+        "php": "^7.3|^8.0",
+        "phpunit/phpunit": "^8.5",
+        "ahmed/basic-auth": "*@dev",
+        "ahmed/token-auth-lib": "*@dev"
     },
 
     "autoload": {
@@ -23,5 +26,18 @@
         "psr-4": {
             "Tests\\": "tests/"
         }
-    }
+    },
+    "scripts": {
+        "test" : "vendor/bin/phpunit"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "BasicAuth"
+        },
+        {
+            "type": "path",
+            "url": "TokenAuthLib"
+        }
+    ]
 }
