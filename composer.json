@@ -18,6 +18,7 @@
         "psr-4": {
             "Creational\\": "Creational",
             "Structural\\": "Structural",
+            "Behavioral\\": "Behavioral",
             "Others\\": "Others"
         }
     },
