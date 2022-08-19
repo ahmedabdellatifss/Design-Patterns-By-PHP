@@ -15,6 +15,15 @@ class RepositoryTest extends TestCase
     private PersistenceInterface $persistence;
     private UserRepositoryInterface $userRepository;
 
+    protected function setUp(): void
+    {
+        $dataSource = [
+            1 => ['name' => 'ahmed', 'email' => 'ahmed@test.com', 'password' => '####'],
+            2 => ['name' => 'mohamed', 'email' => 'mohamed@test.com', 'password' => '#)$(2S##'],
+            3 => ['name' => 'Mona', 'email' => 'mona@test.com', 'password' => '#$#@$']];
+        $this->persistence = new ArrayEntityManager($dataSource);
+        $this->userRepository = new UserRepository($this->persistence, new UserDataMapper());
+    }
     public function testCanFindUserById()
     {
         $user = $this->userRepository->find(1);
@@ -35,15 +44,7 @@ class RepositoryTest extends TestCase
         self::assertEquals('ramy', $user->getName());
     }
 
-    protected function setUp(): void
-    {
-        $dataSource = [
-            1 => ['name' => 'ahmed', 'email' => 'ahmed@test.com', 'password' => '####'],
-            2 => ['name' => 'mohamed', 'email' => 'mohamed@test.com', 'password' => '#)$(2S##'],
-            3 => ['name' => 'Mona', 'email' => 'mona@test.com', 'password' => '#$#@$']];
-        $this->persistence = new ArrayEntityManager($dataSource);
-        $this->userRepository = new UserRepository($this->persistence, new UserDataMapper());
-    }
+    
 
 
 }
