@@ -1,6 +1,7 @@
 {
     "name": "ahmed/design-pattern-in-php",
     "description": "code example for design patterns in php",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "ahmedabdellatifss",
@@ -10,8 +11,8 @@
     "require": {
         "php": "^7.3|^8.0",
         "phpunit/phpunit": "^8.5",
-        "ahmed/basic-auth": "*@dev",
-        "ahmed/token-auth-lib": "*@dev"
+        "ahmed/basic-auth": "dev-master",
+        "ahmed/token-auth-lib": "dev-master"
     },
 
     "autoload": {
@@ -30,7 +31,7 @@
         }
     },
     "scripts": {
-        "test" : "vendor/bin/phpunit"
+        "test": "vendor/bin/phpunit"
     },
     "repositories": [
         {
@@ -41,5 +42,6 @@
             "type": "path",
             "url": "TokenAuthLib"
         }
-    ]
+    ],
+    "license": ["MIT"]
 }
