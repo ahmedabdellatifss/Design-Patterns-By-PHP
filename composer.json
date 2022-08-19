@@ -19,6 +19,7 @@
             "Creational\\": "Creational",
             "Structural\\": "Structural",
             "Behavioral\\": "Behavioral",
+            "Repositories\\": "Repositories",
             "Others\\": "Others"
         }
     },
