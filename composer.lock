@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9c2d6f4c82c56d617f0640f74fa84e39",
+    "content-hash": "300bfc5830abb09b12532acf1482a7b8",
     "packages": [
         {
             "name": "ahmed/basic-auth",
