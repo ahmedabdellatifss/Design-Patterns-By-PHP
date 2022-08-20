@@ -1,7 +1,7 @@
 <?php
 
 namespace Creational\AbstractFactory;
-
+use Creational\CarInterface;
 class BMWCar implements CarInterface 
 {
     private $price;
